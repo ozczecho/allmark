@@ -5,8 +5,8 @@
 package handlers
 
 import (
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/web/view/viewmodel"
+	"allmark/common/route"
+	"allmark/web/view/viewmodel"
 	"bufio"
 	"bytes"
 	"encoding/json"

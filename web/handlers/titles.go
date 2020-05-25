@@ -5,9 +5,9 @@
 package handlers
 
 import (
-	"github.com/andreaskoch/allmark/web/header"
-	"github.com/andreaskoch/allmark/web/orchestrator"
-	"github.com/andreaskoch/allmark/web/view/viewmodel"
+	"allmark/web/header"
+	"allmark/web/orchestrator"
+	"allmark/web/view/viewmodel"
 	"encoding/json"
 	"io"
 	"net/http"

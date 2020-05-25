@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/services/converter/markdowntohtml/imageprovider"
-	"github.com/andreaskoch/allmark/services/thumbnail"
+	"allmark/common/route"
+	"allmark/model"
+	"allmark/services/converter/markdowntohtml/imageprovider"
+	"allmark/services/thumbnail"
 )
 
 func Test_Convert(t *testing.T) {

@@ -5,9 +5,9 @@
 package document
 
 import (
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/services/parser/metadata"
-	"github.com/andreaskoch/allmark/services/parser/pattern"
+	"allmark/model"
+	"allmark/services/parser/metadata"
+	"allmark/services/parser/pattern"
 	"fmt"
 	"strings"
 	"time"

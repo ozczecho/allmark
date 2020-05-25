@@ -5,11 +5,11 @@
 package orchestrator
 
 import (
-	"github.com/andreaskoch/allmark/common/content"
-	"github.com/andreaskoch/allmark/common/paths"
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/web/view/viewmodel"
+	"allmark/common/content"
+	"allmark/common/paths"
+	"allmark/common/route"
+	"allmark/model"
+	"allmark/web/view/viewmodel"
 	"fmt"
 )
 

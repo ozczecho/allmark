@@ -184,7 +184,7 @@ Or you can build allmark yourself if you have [go installed](http://golang.org/d
 
 `-- There are currently no known bugs :dancers: --`
 
-If you encouter a bug please file an issue on at [github.com/andreaskoch/allmark/issues](https://github.com/andreaskoch/allmark/issues).
+If you encouter a bug please file an issue on at [allmark/issues](https://allmark/issues).
 
 ## Roadmap / To Dos
 
@@ -233,5 +233,5 @@ All contributions are welcome!
 ## Contact
 
 Twitter: [@allmark_io](https://twitter.com/allmark_io) or [@andreaskoch](https://twitter.com/andreaskoch)
-Github: [github.com/andreaskoch/allmark](https://github.com/andreaskoch/allmark)
+Github: [allmark](https://allmark)
 E-Mail: andy@allmark.io

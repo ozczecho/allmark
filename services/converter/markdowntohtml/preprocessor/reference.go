@@ -5,8 +5,8 @@
 package preprocessor
 
 import (
-	"github.com/andreaskoch/allmark/common/paths"
-	"github.com/andreaskoch/allmark/model"
+	"allmark/common/paths"
+	"allmark/model"
 	"fmt"
 	"regexp"
 	"strings"

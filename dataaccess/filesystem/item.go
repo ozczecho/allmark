@@ -5,10 +5,10 @@
 package filesystem
 
 import (
-	"github.com/andreaskoch/allmark/common/content"
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/common/util/hashutil"
-	"github.com/andreaskoch/allmark/dataaccess"
+	"allmark/common/content"
+	"allmark/common/route"
+	"allmark/common/util/hashutil"
+	"allmark/dataaccess"
 	"fmt"
 )
 

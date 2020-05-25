@@ -5,11 +5,11 @@
 package filesystem
 
 import (
-	"github.com/andreaskoch/allmark/common/config"
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/common/util/fsutil"
-	"github.com/andreaskoch/allmark/dataaccess"
+	"allmark/common/config"
+	"allmark/common/logger"
+	"allmark/common/route"
+	"allmark/common/util/fsutil"
+	"allmark/dataaccess"
 	"fmt"
 	"path/filepath"
 )

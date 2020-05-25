@@ -5,12 +5,12 @@
 package handlers
 
 import (
-	"github.com/andreaskoch/allmark/common/config"
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/common/util/fsutil"
-	"github.com/andreaskoch/allmark/web/header"
-	"github.com/andreaskoch/allmark/web/orchestrator"
-	"github.com/andreaskoch/allmark/web/view/templates"
+	"allmark/common/config"
+	"allmark/common/logger"
+	"allmark/common/util/fsutil"
+	"allmark/web/header"
+	"allmark/web/orchestrator"
+	"allmark/web/view/templates"
 	"fmt"
 	"net/http"
 )
@@ -79,6 +79,9 @@ var (
 
 	// TypeAheadSearchHandlerRoute defines the route for typeahead-search-handler requests.
 	TypeAheadSearchHandlerRoute = "/search.json"
+
+	// TypeAheadTagsHandlerRoute defines the route for typeahead-tags-handler requests.
+	TypeAheadTagsHandlerRoute = "/tags.json"
 
 	// TypeAheadTitlesHandlerRoute defines the route for typeahead-titles-handler requests.
 	TypeAheadTitlesHandlerRoute = "/titles.json"
@@ -226,6 +229,12 @@ func GetBaseHandlers(logger logger.Logger, config config.Config, templateProvide
 		OpenSearchDescription(headerWriterFactory.Static(),
 			orchestratorFactory.NewOpenSearchDescriptionOrchestrator(),
 			templateProvider))
+
+	// tags.json
+	handlers.Add(
+		TypeAheadTagsHandlerRoute,
+		TagsSearch(headerWriterFactory.Dynamic(),
+			orchestratorFactory.NewTagsSearchOrchestrator()))
 
 	// titles.json
 	handlers.Add(

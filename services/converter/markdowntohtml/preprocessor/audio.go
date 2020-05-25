@@ -5,9 +5,9 @@
 package preprocessor
 
 import (
-	"github.com/andreaskoch/allmark/common/paths"
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/services/converter/markdowntohtml/util"
+	"allmark/common/paths"
+	"allmark/model"
+	"allmark/services/converter/markdowntohtml/util"
 	"fmt"
 	"mime"
 	"regexp"

@@ -5,7 +5,7 @@
 package dataaccess
 
 import (
-	"github.com/andreaskoch/allmark/common/route"
+	"allmark/common/route"
 	"fmt"
 )
 

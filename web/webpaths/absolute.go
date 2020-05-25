@@ -5,7 +5,7 @@
 package webpaths
 
 import (
-	"github.com/andreaskoch/allmark/common/route"
+	"allmark/common/route"
 	"strings"
 )
 

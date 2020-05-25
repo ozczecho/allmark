@@ -5,8 +5,8 @@
 package dataaccess
 
 import (
-	"github.com/andreaskoch/allmark/common/content"
-	"github.com/andreaskoch/allmark/common/route"
+	"allmark/common/content"
+	"allmark/common/route"
 )
 
 type ItemType int

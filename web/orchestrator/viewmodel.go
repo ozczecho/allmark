@@ -7,10 +7,10 @@ package orchestrator
 import (
 	"time"
 
-	"github.com/andreaskoch/allmark/common/paths"
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/web/view/viewmodel"
+	"allmark/common/paths"
+	"allmark/common/route"
+	"allmark/model"
+	"allmark/web/view/viewmodel"
 )
 
 type ViewModelOrchestrator struct {

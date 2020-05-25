@@ -5,11 +5,11 @@
 package thumbnail
 
 import (
-	"github.com/andreaskoch/allmark/common/logger"
-	// "github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/common/util/fsutil"
-	"github.com/andreaskoch/allmark/dataaccess"
-	"github.com/andreaskoch/allmark/services/imageconversion"
+	"allmark/common/logger"
+	// "allmark/common/route"
+	"allmark/common/util/fsutil"
+	"allmark/dataaccess"
+	"allmark/services/imageconversion"
 	"fmt"
 	"io"
 	"path/filepath"

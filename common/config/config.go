@@ -15,10 +15,10 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/andreaskoch/allmark/common/certificates"
-	"github.com/andreaskoch/allmark/common/logger/loglevel"
-	"github.com/andreaskoch/allmark/common/ports"
-	"github.com/andreaskoch/allmark/common/util/fsutil"
+	"allmark/common/certificates"
+	"allmark/common/logger/loglevel"
+	"allmark/common/ports"
+	"allmark/common/util/fsutil"
 	"github.com/abbot/go-http-auth"
 	"github.com/mitchellh/go-homedir"
 )

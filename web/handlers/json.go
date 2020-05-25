@@ -5,9 +5,9 @@
 package handlers
 
 import (
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/web/header"
-	"github.com/andreaskoch/allmark/web/orchestrator"
+	"allmark/common/route"
+	"allmark/web/header"
+	"allmark/web/orchestrator"
 	"net/http"
 	"strings"
 )

@@ -5,11 +5,11 @@
 package handlers
 
 import (
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/web/header"
-	"github.com/andreaskoch/allmark/web/orchestrator"
-	"github.com/andreaskoch/allmark/web/view/templates"
-	"github.com/andreaskoch/allmark/web/view/viewmodel"
+	"allmark/common/logger"
+	"allmark/web/header"
+	"allmark/web/orchestrator"
+	"allmark/web/view/templates"
+	"allmark/web/view/viewmodel"
 	"io"
 	"net/http"
 )

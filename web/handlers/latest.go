@@ -5,11 +5,11 @@
 package handlers
 
 import (
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/common/util/hashutil"
-	"github.com/andreaskoch/allmark/web/header"
-	"github.com/andreaskoch/allmark/web/orchestrator"
+	"allmark/common/logger"
+	"allmark/common/route"
+	"allmark/common/util/hashutil"
+	"allmark/web/header"
+	"allmark/web/orchestrator"
 	"encoding/json"
 	"net/http"
 	"strings"

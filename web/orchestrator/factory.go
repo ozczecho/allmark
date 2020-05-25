@@ -5,12 +5,12 @@
 package orchestrator
 
 import (
-	"github.com/andreaskoch/allmark/common/config"
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/dataaccess"
-	"github.com/andreaskoch/allmark/services/converter"
-	"github.com/andreaskoch/allmark/services/parser"
-	"github.com/andreaskoch/allmark/web/webpaths"
+	"allmark/common/config"
+	"allmark/common/logger"
+	"allmark/dataaccess"
+	"allmark/services/converter"
+	"allmark/services/parser"
+	"allmark/web/webpaths"
 )
 
 func NewFactory(logger logger.Logger, config config.Config, repository dataaccess.Repository, parser parser.Parser, converter converter.Converter, webPathProvider webpaths.WebPathProvider) *Factory {
@@ -51,6 +51,7 @@ type Factory struct {
 	tagsOrchestrator                  *TagsOrchestrator
 	xmlSitemapOrchestrator            *XmlSitemapOrchestrator
 	typeAheadOrchestrator             *TypeAheadOrchestrator
+	tagsSearchOrchestrator            *TagsSearchOrchestrator
 	titlesOrchestrator                *TitlesOrchestrator
 	updateOrchestrator                *UpdateOrchestrator
 }
@@ -203,6 +204,19 @@ func (factory *Factory) NewTypeAheadOrchestrator() *TypeAheadOrchestrator {
 	}
 
 	return factory.typeAheadOrchestrator
+}
+
+func (factory *Factory) NewTagsSearchOrchestrator() *TagsSearchOrchestrator {
+
+	if factory.tagsSearchOrchestrator != nil {
+		return factory.tagsSearchOrchestrator
+	}
+
+	factory.tagsSearchOrchestrator = &TagsSearchOrchestrator{
+		Orchestrator: factory.baseOrchestrator,
+	}
+
+	return factory.tagsSearchOrchestrator
 }
 
 func (factory *Factory) NewTitlesOrchestrator() *TitlesOrchestrator {

@@ -5,9 +5,9 @@
 package index
 
 import (
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/common/route"
-	"github.com/andreaskoch/allmark/model"
+	"allmark/common/logger"
+	"allmark/common/route"
+	"allmark/model"
 )
 
 func New(logger logger.Logger) *Index {

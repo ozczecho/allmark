@@ -5,9 +5,9 @@
 package orchestrator
 
 import (
-	"github.com/andreaskoch/allmark/common/paths"
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/web/view/viewmodel"
+	"allmark/common/paths"
+	"allmark/model"
+	"allmark/web/view/viewmodel"
 	"fmt"
 	"time"
 )

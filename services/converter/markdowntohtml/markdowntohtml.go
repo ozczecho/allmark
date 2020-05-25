@@ -5,12 +5,12 @@
 package markdowntohtml
 
 import (
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/common/paths"
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/services/converter/markdowntohtml/imageprovider"
-	"github.com/andreaskoch/allmark/services/converter/markdowntohtml/postprocessor"
-	"github.com/andreaskoch/allmark/services/converter/markdowntohtml/preprocessor"
+	"allmark/common/logger"
+	"allmark/common/paths"
+	"allmark/model"
+	"allmark/services/converter/markdowntohtml/imageprovider"
+	"allmark/services/converter/markdowntohtml/postprocessor"
+	"allmark/services/converter/markdowntohtml/preprocessor"
 	"github.com/russross/blackfriday"
 )
 

@@ -7,7 +7,7 @@
 package console
 
 import (
-	"github.com/andreaskoch/allmark/common/logger/loglevel"
+	"allmark/common/logger/loglevel"
 	"fmt"
 	"io"
 	"log"

@@ -5,9 +5,9 @@
 package update
 
 import (
-	"github.com/andreaskoch/allmark/common/logger"
-	"github.com/andreaskoch/allmark/web/orchestrator"
-	"github.com/andreaskoch/allmark/web/view/viewmodel"
+	"allmark/common/logger"
+	"allmark/web/orchestrator"
+	"allmark/web/view/viewmodel"
 )
 
 func NewHub(logger logger.Logger, updateOrchestrator *orchestrator.UpdateOrchestrator) *Hub {

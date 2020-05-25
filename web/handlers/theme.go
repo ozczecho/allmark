@@ -5,9 +5,9 @@
 package handlers
 
 import (
-	"github.com/andreaskoch/allmark/common/util/hashutil"
-	"github.com/andreaskoch/allmark/web/header"
-	"github.com/andreaskoch/allmark/web/view/themes"
+	"allmark/common/util/hashutil"
+	"allmark/web/header"
+	"allmark/web/view/themes"
 	"fmt"
 	"mime"
 	"net/http"

@@ -7,9 +7,9 @@ package typedetection
 import (
 	"strings"
 
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/services/parser/metadata"
-	"github.com/andreaskoch/allmark/services/parser/pattern"
+	"allmark/model"
+	"allmark/services/parser/metadata"
+	"allmark/services/parser/pattern"
 )
 
 func DetectType(lines []string) model.ItemType {

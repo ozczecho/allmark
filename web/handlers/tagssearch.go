@@ -13,7 +13,7 @@ import (
 	"net/http"
 )
 
-func TypeAhead(headerWriter header.HeaderWriter, typeAheadOrchestrator *orchestrator.TypeAheadOrchestrator) http.Handler {
+func TagsSearch(headerWriter header.HeaderWriter, tagsSearchOrchestrator *orchestrator.TagsSearchOrchestrator) http.Handler {
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
@@ -21,17 +21,14 @@ func TypeAhead(headerWriter header.HeaderWriter, typeAheadOrchestrator *orchestr
 		headerWriter.Write(w, header.CONTENTTYPE_JSON)
 
 		// get the suggestions
-		query, _ := getQueryParameterFromURL(*r.URL)
-		searchResults := typeAheadOrchestrator.GetSuggestions(query)
-
-		// convert to json
-		writeSearchResults(w, searchResults)
+		tags := tagsSearchOrchestrator.GetTags()
+		writeTags(w, tags)
 	})
 
 }
 
-func writeSearchResults(writer io.Writer, searchResults []viewmodel.TypeAhead) error {
-	bytes, err := json.MarshalIndent(searchResults, "", "\t")
+func writeTags(writer io.Writer, tags []viewmodel.Tag) error { 
+	bytes, err := json.MarshalIndent(tags, "", "\t")
 	if err != nil {
 		return err
 	}

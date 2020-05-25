@@ -5,9 +5,9 @@
 package presentation
 
 import (
-	"github.com/andreaskoch/allmark/model"
-	"github.com/andreaskoch/allmark/services/parser/document"
-	"github.com/andreaskoch/allmark/services/parser/pattern"
+	"allmark/model"
+	"allmark/services/parser/document"
+	"allmark/services/parser/pattern"
 	"fmt"
 	"strings"
 	"time"
