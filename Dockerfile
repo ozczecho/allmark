@@ -1,13 +1,17 @@
 FROM golang:latest
-MAINTAINER Andreas Koch <andy@allmark.io>
+MAINTAINER Mike <ozczecho@yahoo.com>
 
 # Install pandoc for RTF conversion
 RUN apt-get update && apt-get install -qy pandoc
 
 # Build
-ADD . /go
-RUN make install
-RUN make crosscompile
+COPY . /go/src/allmark
+
+RUN mkdir /cli
+
+WORKDIR /go/src/allmark/cli
+RUN go get ./
+RUN go build -o /cli/allmark
 
 # Data
 RUN mkdir /data
@@ -15,4 +19,4 @@ ADD . /data
 
 VOLUME ["/data"]
 
-CMD ["/go/bin/allmark", "serve", "/data"]
+CMD ["/cli/allmark", "serve", "/data"]
