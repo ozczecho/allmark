@@ -11,12 +11,14 @@ RUN mkdir /cli
 
 WORKDIR /go/src/allmark/cli
 RUN go get ./
-RUN go build -o /cli/allmark
+RUN env GOOS=linux GOARCH=amd64 go build -o /cli/allmark
 
 # Data
 RUN mkdir /data
 ADD . /data
 
 VOLUME ["/data"]
+
+EXPOSE 33001
 
 CMD ["/cli/allmark", "serve", "/data"]
